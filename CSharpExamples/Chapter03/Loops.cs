@@ -1,3 +1,6 @@
+using System.Reflection.PortableExecutable;
+using System.Text;
+
 namespace Chapter03
 {
     public class Loops
@@ -64,6 +67,24 @@ namespace Chapter03
                 Console.WriteLine("The " + kvp.Key + " of Moria is " + kvp.Value);
             }
 
+            /* FOREACH LOOP WITH STRINGBUILDER */
+
+            // TODO: Use the StringBuilder class for the accumulator pattern with strings
+
+            string[] frodoLetters = ["f", "r", "o", "d", "o"];
+
+            // Declare new Stringbuilder object
+            StringBuilder frodo = new StringBuilder();
+
+            // Loop over and add to it a letter at a time - make it uppercase
+            foreach (string letter in frodoLetters)
+            {
+                frodo.Append(letter.ToUpper());
+            }
+
+            // Print the final result
+            Console.WriteLine(frodo);
+
             /* WHILE LOOP */
 
             int[] orcs = [2, 14, 33, 57, 61, 89, 94, 106, 123, 176];
@@ -104,9 +125,63 @@ namespace Chapter03
                 Console.WriteLine(book);
             }
 
-            // TEMP NOTE TODO
-            // break and continue keywords
-            // StringBuilder class
+            /* BREAK AND CONTINUE KEYWORDS WITH LOOPS */
+
+            Dictionary<string, bool> lotrCharacters = new Dictionary<string, bool>
+            {
+                { "Bilbo Baggins", false },
+                { "Frodo Baggins", true },
+                { "Samwise (Sam) Gamgee", true },
+                { "Gandalf the Grey", true },
+                { "Peregrin (Pippin) Took", true },
+                { "Meriadoc (Merry) Brandybuck", true },
+                { "Aragorn", true },
+                { "Arwen Evenstar", false },
+                { "Elrond Halfelven", false },
+                { "Boromir", true },
+                { "Faramir", false },
+                { "Galadriel", false },
+                { "Legolas", true },
+                { "Gimli", true },
+                { "Gollum (Sméagol)", false },
+                { "Sauron", false }
+            };
+
+            Console.WriteLine("\nGATHERING THE FELLOWSHIP\n");
+
+            // TODO: Loop through the key/value pairs using while(true)
+            // If a character is a member of the fellowship, put them in a list
+            // If a character is not a member, continue without checking count
+            // Break the loop when all 9 members have been found
+            // If a character was found but fellowship is still not at 9, print a statement
+            List<string> fellowship = [];
+
+            foreach (KeyValuePair<string, bool> lotrChar in lotrCharacters)
+            {
+                if (lotrChar.Value)
+                {
+                    fellowship.Add(lotrChar.Key);
+                    Console.WriteLine(lotrChar.Key + " added to the fellowship.");
+                }
+                else
+                {
+                    Console.WriteLine(
+                        "(" + lotrChar.Key + " is not a member of the fellowship.)\n"
+                    );
+                    continue; // will skip remaining code of loop body but continue looping
+                }
+
+                if (fellowship.Count == 9)
+                {
+                    Console.WriteLine("All members have been found!");
+                    break; // stops loop altogether
+                }
+                Console.WriteLine("Still searching for more fellowship members...\n");
+            }
+
+            // Print the list of fellowship members
+            Console.WriteLine("\nThe Fellowship of the Ring:");
+            Console.WriteLine(string.Join(", ", fellowship));
         }
     }
 }
