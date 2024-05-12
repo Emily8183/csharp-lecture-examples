@@ -4,6 +4,8 @@ namespace Chapter03
     {
         public static void RunExamples()
         {
+            Console.WriteLine("\nCONDITIONALS\n");
+
             /* EQUALITY & LOGICAL OPERATORS */
 
             // TODO: Print several boolean expressions using different operators with the specified types
@@ -28,7 +30,7 @@ namespace Chapter03
             // TODO: Store information about a noble in a dictionary
 
             // Create a dictionary with string key and string value
-            Dictionary<string, string> noble = [];
+            Dictionary<string, string> noble = []; // or, new Dictionary<string, string>()
 
             // Prompt the user for a name
             Console.WriteLine("Please enter the name of a noble: ");
@@ -73,7 +75,7 @@ namespace Chapter03
             // TODO: Store information about a elf in a dictionary
 
             // Create a dictionary with string key and string value
-            Dictionary<string, string> elf = [];
+            Dictionary<string, string> elf = []; // or, new Dictionary<string, string>()
 
             // Prompt the user for a name
             Console.WriteLine("Please enter the name of an elf: ");

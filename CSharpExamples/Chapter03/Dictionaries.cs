@@ -4,6 +4,8 @@ namespace Chapter03
     {
         public static void RunExamples()
         {
+            Console.WriteLine("\nDICTIONARIES\n");
+
             /* CREATING A DICTIONARY AND ADDING KEY/VALUE PAIRS */
 
             // TODO: Declare an empty dictionary, add key/value pairs, and print the map

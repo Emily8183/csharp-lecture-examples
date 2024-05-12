@@ -4,6 +4,8 @@ namespace Chapter03
     {
         public static void RunExamples()
         {
+            Console.WriteLine("\nLISTS\n");
+
             /* DECLARING LISTS */
 
             // TODO: Declare two empty lists
