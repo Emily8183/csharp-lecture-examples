@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Chapter02
-build_property.ProjectDir = /Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/CSharpExamples/
+build_property.ProjectDir = /Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

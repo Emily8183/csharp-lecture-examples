@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "48omvK6z1YiL6FwPQZ1nFqZQ07wv6VaDUIpwJJHrm993p0EC0lzsGmrSTRkCXJlDR8np4GBQSr0OYCl0Wm69hQ==",
+  "dgSpecHash": "uX+rK12yoA8jjfsdsAVF9wuzMe17cvPWUSaq1KVEo9NNJRmiJxRt8oIrbxZBf0nah7GmeB6x8LzDsqbg1AFhcw==",
   "success": true,
-  "projectFilePath": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/CSharpExamples/Chapter02.csproj",
+  "projectFilePath": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/Chapter02.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

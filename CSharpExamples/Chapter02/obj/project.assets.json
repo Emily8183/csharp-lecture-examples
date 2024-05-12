@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/CSharpExamples/Chapter02.csproj",
+      "projectUniqueName": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/Chapter02.csproj",
       "projectName": "Chapter02",
-      "projectPath": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/CSharpExamples/Chapter02.csproj",
+      "projectPath": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/Chapter02.csproj",
       "packagesPath": "/Users/CRJ/.nuget/packages/",
-      "outputPath": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/CSharpExamples/obj/",
+      "outputPath": "/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/CRJ/.nuget/NuGet/NuGet.Config"

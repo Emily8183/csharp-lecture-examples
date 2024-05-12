@@ -1,0 +1,15 @@
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.GeneratedMSBuildEditorConfig.editorconfig
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.AssemblyInfoInputs.cache
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.AssemblyInfo.cs
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.csproj.CoreCompileInputs.cache
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.sourcelink.json
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/bin/Debug/net8.0/Chapter02
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/bin/Debug/net8.0/Chapter02.deps.json
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/bin/Debug/net8.0/Chapter02.runtimeconfig.json
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/bin/Debug/net8.0/Chapter02.dll
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/bin/Debug/net8.0/Chapter02.pdb
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.dll
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/refint/Chapter02.dll
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.pdb
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/Chapter02.genruntimeconfig.cache
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter02/obj/Debug/net8.0/ref/Chapter02.dll
