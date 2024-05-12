@@ -104,7 +104,7 @@ Console.WriteLine(string.Join(", ", toppings));
 /* INITIALIZING AN ARRAY WITH VALUES */
 
 // Surprise pizzas!
-string[] pizzas = { "anchovy and pineapple", "sauerkraut and tomato", "corn and carrot" };
+string[] pizzas = ["anchovy and pineapple", "sauerkraut and tomato", "corn and carrot"];
 
 // TODO: Print a sentence with the third type of pizza using bracket notation
 Console.WriteLine("I tried a " + pizzas[2] + " pizza and it wasn't truly terrible.");
