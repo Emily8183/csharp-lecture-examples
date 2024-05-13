@@ -21,3 +21,6 @@ book2.CheckOut();
 book1.CheckIn();
 
 library.PrintAvailableBooks();
+
+Console.WriteLine(book1.ToString());
+Console.WriteLine(book1);

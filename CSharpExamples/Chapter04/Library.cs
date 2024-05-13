@@ -2,19 +2,21 @@ namespace Chapter04
 {
     public class Library
     {
-        private List<Book> books = [];
+        private List<Book> Books { get; } = [];
 
         // Note: the default constructor is sufficient to instantiate a library object
 
+        // INSTANCE METHODS
+
         public void AddBook(Book book)
         {
-            books.Add(book);
+            Books.Add(book);
         }
 
         public void PrintAvailableBooks()
         {
             Console.WriteLine("\nLIST OF BOOKS AVAILABLE:");
-            foreach (Book book in books)
+            foreach (Book book in Books)
             {
                 if (book.Available)
                 {

@@ -1,0 +1,15 @@
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/bin/Debug/net8.0/Chapter05
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/bin/Debug/net8.0/Chapter05.deps.json
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/bin/Debug/net8.0/Chapter05.runtimeconfig.json
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/bin/Debug/net8.0/Chapter05.dll
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/bin/Debug/net8.0/Chapter05.pdb
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.GeneratedMSBuildEditorConfig.editorconfig
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.AssemblyInfoInputs.cache
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.AssemblyInfo.cs
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.csproj.CoreCompileInputs.cache
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.sourcelink.json
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.dll
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/refint/Chapter05.dll
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.pdb
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/Chapter05.genruntimeconfig.cache
+/Users/CRJ/Coding/LaunchCode/Lecture-Examples/U2-CSharp/csharp-lecture-examples/CSharpExamples/Chapter05/obj/Debug/net8.0/ref/Chapter05.dll
