@@ -1,26 +1,13 @@
 ﻿/* CHAPTER 4 EXAMPLES */
-using Chapter04;
 
-Library library = new Library();
+// TODO: Create a Book class and a Library class before continuing below
 
-Book book1 = new Book("Contact", "Carl Sagan", 430);
-Book book2 = new Book("Nemesis", "Isaac Asimov", 364);
-Book book3 = new Book("1984", "George Orwell");
+// TODO: Instantiate a library
 
-library.AddBook(book1);
-library.AddBook(book2);
-library.AddBook(book3);
+// TODO: Instatiate 3 books and add them to the library's Books list
 
-library.PrintAvailableBooks();
+// TODO: Print the list of available books
 
-book1.CheckOut();
+// TODO: Check out book 1 and print the list of available books again
 
-library.PrintAvailableBooks();
-
-book2.CheckOut();
-book1.CheckIn();
-
-library.PrintAvailableBooks();
-
-Console.WriteLine(book1.ToString());
-Console.WriteLine(book1);
+// TODO: Check out book 2, check in book 1, and print the available books again
