@@ -20,7 +20,7 @@ namespace Chapter03
                 "The Battle of the Black Gate"
             };
 
-            // TODO: Construct a basic for loop to print each battle
+            // Construct a basic for loop to print each battle
             for (int i = 0; i < battles.Length; i++)
             {
                 Console.WriteLine(battles[i]);
@@ -30,7 +30,7 @@ namespace Chapter03
 
             string[] words = ["YOU", "SHALL", "NOT", "PASS"];
 
-            // TODO: Construct a foreach loop to print each element of the array above
+            // Construct a foreach loop to print each element of the array above
             foreach (string word in words)
             {
                 Console.WriteLine(word);
@@ -47,7 +47,7 @@ namespace Chapter03
             moria.Add("king", "Balin");
             moria.Add("monster", "a balrog");
 
-            // TODO: Construct three for-each loops for the dictionary above
+            // Construct three for-each loops for the dictionary above
 
             // Loop through keys and print each
             foreach (string key in moria.Keys)
@@ -69,7 +69,7 @@ namespace Chapter03
 
             /* FOREACH LOOP WITH STRINGBUILDER */
 
-            // TODO: Use the StringBuilder class for the accumulator pattern with strings
+            // Use the StringBuilder class for the accumulator pattern with strings
 
             string[] frodoLetters = ["f", "r", "o", "d", "o"];
 
@@ -89,7 +89,7 @@ namespace Chapter03
 
             int[] orcs = [2, 14, 33, 57, 61, 89, 94, 106, 123, 176];
 
-            // TODO: Construct a while loop to print each number in the Array above as long as the value is below 100
+            // Construct a while loop to print each number in the Array above as long as the value is below 100
 
             int index = 0;
 
@@ -106,7 +106,7 @@ namespace Chapter03
             string title;
             bool isQuitting = false;
 
-            // TODO: Construct a do-while loop to ask the user for book titles until they enter "QUIT"
+            // Construct a do-while loop to ask the user for book titles until they enter "QUIT"
             // Unless quitting, add each title to the collection above
             do
             {
@@ -149,7 +149,7 @@ namespace Chapter03
 
             Console.WriteLine("\nGATHERING THE FELLOWSHIP\n");
 
-            // TODO: Loop through the key/value pairs using while(true)
+            // Loop through the key/value pairs using while(true)
             // If a character is a member of the fellowship, put them in a list
             // If a character is not a member, continue without checking count
             // Break the loop when all 9 members have been found

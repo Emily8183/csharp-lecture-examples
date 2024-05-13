@@ -1,11 +1,11 @@
 ﻿/**** CHAPTER 2 EXAMPLES ****/
 
-// TODO: Make the Examples class available from the namespace
+// Make the Examples class available from the namespace
 using Chapter02;
 
 /* DECLARING AND INITIALIZING VARIABLES */
 
-// TODO: Declare and initialize several variables
+// Declare and initialize several variables
 string unit = "Unit";
 char unitNum = '2';
 string currentUnit = unit + " " + unitNum;
@@ -15,7 +15,7 @@ int cohortYear = 2024;
 float percentComplete1 = 100 * 7.0f / 16;
 double areaOfCircle = Math.PI * 5 * 5;
 
-// TODO: Print sentences to the console using the variables above
+// Print sentences to the console using the variables above
 Console.WriteLine("We are currently in " + currentUnit);
 Console.WriteLine("Unit 1 is " + (unit1Finished ? "finished" : "unfinished"));
 Console.WriteLine(
@@ -25,7 +25,7 @@ Console.WriteLine("The area of a circle of radius 5 is " + areaOfCircle);
 
 /* GETTING USER INPUT */
 
-// TODO: Get user input with Console.ReadLine()
+// Get user input with Console.ReadLine()
 
 // Precede your input with output to the user so they know what you need
 Console.WriteLine("Please enter your first name: ");
@@ -36,13 +36,13 @@ string firstName = Console.ReadLine();
 // Do something with the stored user input
 Console.WriteLine("Hello, " + firstName + "!");
 
-// TODO: Repeat the process
+// Repeat the process
 Console.WriteLine("Please enter your last name: ");
 string lastName = Console.ReadLine();
 string fullName = firstName + " " + lastName;
 Console.WriteLine("Hello, " + fullName + "!");
 
-// TODO: Get user input that needs to be converted to other data types
+// Get user input that needs to be converted to other data types
 
 // int
 Console.WriteLine(
@@ -69,14 +69,14 @@ Console.WriteLine("Your rating: " + rating);
 
 string bizName = "Pizza Surprise";
 
-// TODO: Print the length of the business name
+// Print the length of the business name
 Console.WriteLine(bizName.Length);
 
-// TODO: Find the space and use its index to print just "Surprise"
+// Find the space and use its index to print just "Surprise"
 int spaceIdx = bizName.IndexOf(' '); // char
 Console.WriteLine(bizName.Substring(spaceIdx + 1));
 
-// TODO: Print the result of checking if the word "pizza" is in the name (case-insensitive)
+// Print the result of checking if the word "pizza" is in the name (case-insensitive)
 Console.WriteLine(bizName.ToLower().Contains("pizza"));
 
 /* ARRAYS */
@@ -84,10 +84,10 @@ Console.WriteLine(bizName.ToLower().Contains("pizza"));
 // A new array of size 8
 string[] toppings = new string[8];
 
-// TODO: Verify length of array
+// Verify length of array
 Console.WriteLine(toppings.Length);
 
-// TODO: Add some toppings
+// Add some toppings
 toppings[0] = "pepperoni";
 toppings[1] = "anchovies";
 toppings[2] = "olives";
@@ -95,10 +95,10 @@ toppings[3] = "pineapple";
 
 Console.WriteLine(toppings[5]); // null
 
-// TODO: Try to print the array by name directly
+// Try to print the array by name directly
 Console.WriteLine(toppings); // prints type only
 
-// TODO: Use the string method .Join() to print the contents of the array
+// Use the string method .Join() to print the contents of the array
 Console.WriteLine(string.Join(", ", toppings));
 
 /* INITIALIZING AN ARRAY WITH VALUES */
@@ -106,21 +106,21 @@ Console.WriteLine(string.Join(", ", toppings));
 // Surprise pizzas!
 string[] pizzas = ["anchovy and pineapple", "sauerkraut and tomato", "corn and carrot"];
 
-// TODO: Print a sentence with the third type of pizza using bracket notation
+// Print a sentence with the third type of pizza using bracket notation
 Console.WriteLine("I tried a " + pizzas[2] + " pizza and it wasn't truly terrible.");
 
-// TODO: Print the list of pizzas, one on each line, without looping
+// Print the list of pizzas, one on each line, without looping
 Console.WriteLine(string.Join("\n", pizzas));
 
 /* WRITING METHODS */
 
-// TODO: Code a method
+// Code a method
 static string GetFullName(string firstName, string lastName)
 {
     return firstName + " " + lastName;
 }
 
-// TODO: Call the method and store the result in a variable, then print it
+// Call the method and store the result in a variable, then print it
 // Take note of the data type of the return value
 string johnSmith = GetFullName("John", "Smith");
 
@@ -128,9 +128,9 @@ Console.WriteLine(johnSmith);
 
 /* USING METHODS FROM OTHER CLASSES */
 
-// TODO: Create a new class, Examples, and define two methods
+// Create a new class, Examples, and define two methods
 
-// TODO: Call each of the static methods from the Examples class
+// Call each of the static methods from the Examples class
 // Make sure to explicitly access the namespace at the top of the file
 
 Examples.SayHello(johnSmith);

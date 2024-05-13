@@ -8,7 +8,7 @@ namespace Chapter03
 
             /* CREATING A DICTIONARY AND ADDING KEY/VALUE PAIRS */
 
-            // TODO: Declare an empty dictionary, add key/value pairs, and print the map
+            // Declare an empty dictionary, add key/value pairs, and print the map
 
             // Create a dictionary, elfAges, that can hold String keys and Integer values
             Dictionary<string, int> elfAges = []; // or, new Dictionary<string, int>()
@@ -24,7 +24,7 @@ namespace Chapter03
 
             /* DICTIONARY METHODS */
 
-            // TODO: Practice using different methods of the Dictionary class
+            // Practice using different methods of the Dictionary class
 
             // Print the count
             Console.WriteLine(elfAges.Count);

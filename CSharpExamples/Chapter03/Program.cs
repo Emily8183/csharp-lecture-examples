@@ -1,4 +1,6 @@
-﻿using Chapter03;
+﻿/**** CHAPTER 3 EXAMPLES ****/
+
+using Chapter03;
 
 Lists.RunExamples();
 Dictionaries.RunExamples();

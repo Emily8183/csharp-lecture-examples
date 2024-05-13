@@ -8,7 +8,7 @@ namespace Chapter03
 
             /* DECLARING LISTS */
 
-            // TODO: Declare two empty lists
+            // Declare two empty lists
             // elves, for data of type string
             // ages, for data of type int
             List<string> elves = new List<string>(); // classic syntax
@@ -16,7 +16,7 @@ namespace Chapter03
 
             /* ADDING ELEMENTS TO LISTS */
 
-            // TODO: Add elements to each of the lists above
+            // Add elements to each of the lists above
 
             // 4 well-known elves
             elves.Add("Legolas");
@@ -32,19 +32,19 @@ namespace Chapter03
 
             /* PRINTING LISTS */
 
-            // TODO: Print each list
+            // Print each list
             Console.WriteLine(string.Join(", ", elves));
             Console.WriteLine(string.Join(", ", ages));
 
             /* USING LIST METHODS */
 
-            // TODO: Print the count of elves
+            // Print the count of elves
             Console.WriteLine(elves.Count);
 
-            // TODO: Check to see if ages contains 2901 and print the result
+            // Check to see if ages contains 2901 and print the result
             Console.WriteLine(ages.Contains(2901));
 
-            // TODO: Sort elves and then print it
+            // Sort elves and then print it
             elves.Sort();
             Console.WriteLine(string.Join(", ", elves));
 

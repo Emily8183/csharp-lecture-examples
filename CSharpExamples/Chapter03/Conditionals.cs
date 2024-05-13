@@ -8,7 +8,7 @@ namespace Chapter03
 
             /* EQUALITY & LOGICAL OPERATORS */
 
-            // TODO: Print several boolean expressions using different operators with the specified types
+            // Print several boolean expressions using different operators with the specified types
 
             // 6 is not equal to 3 + 4
             Console.WriteLine(6 != 3 + 4);
@@ -27,7 +27,7 @@ namespace Chapter03
 
             /* IF, ELSE-IF, AND ELSE */
 
-            // TODO: Store information about a noble in a dictionary
+            // Store information about a noble in a dictionary
 
             // Create a dictionary with string key and string value
             Dictionary<string, string> noble = []; // or, new Dictionary<string, string>()
@@ -72,7 +72,7 @@ namespace Chapter03
 
             /* SWITCH STATEMENTS */
 
-            // TODO: Store information about a elf in a dictionary
+            // Store information about a elf in a dictionary
 
             // Create a dictionary with string key and string value
             Dictionary<string, string> elf = []; // or, new Dictionary<string, string>()

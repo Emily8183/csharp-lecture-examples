@@ -1,4 +1,5 @@
-﻿/* CHAPTER 5 EXAMPLES */
+﻿/**** CHAPTER 5 EXAMPLES ****/
+
 using Chapter05;
 
 // Create 3 objects of the Book class and print their id after each

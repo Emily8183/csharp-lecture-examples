@@ -1,4 +1,5 @@
-﻿/* CHAPTER 4 EXAMPLES */
+﻿/**** CHAPTER 4 EXAMPLES ****/
+
 using Chapter04;
 
 Library library = new Library();
