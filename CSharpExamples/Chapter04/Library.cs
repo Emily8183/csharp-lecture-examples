@@ -5,7 +5,6 @@ namespace Chapter04
         private List<Book> books = [];
 
         // Note: the default constructor is sufficient to instantiate a library object
-    
 
         public void AddBook(Book book)
         {
