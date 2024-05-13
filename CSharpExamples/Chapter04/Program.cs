@@ -1,4 +1,4 @@
-﻿/* CHAPTER 4 EXAMPLES */
+﻿/**** CHAPTER 4 EXAMPLES ****/
 
 // TODO: Create a Book class and a Library class before continuing below
 

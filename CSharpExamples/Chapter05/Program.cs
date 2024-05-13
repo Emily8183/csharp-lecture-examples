@@ -1,4 +1,5 @@
-﻿/* CHAPTER 5 EXAMPLES */
+﻿/**** CHAPTER 5 EXAMPLES ****/
+
 using Chapter05;
 
 // TODO: Print each book's id after its instantiation
