@@ -8,67 +8,16 @@ namespace Chapter05
 
         // Note: the default constructor is sufficient to instantiate a library object
 
+
         // OVERRIDE SPECIAL METHODS
 
-        public override string ToString()
-        {
-            StringBuilder allBookInfo = new();
-            foreach (Book book in Books)
-            {
-                allBookInfo.Append(book.ToString());
-                allBookInfo.Append("\n" + Constants.DASHED_LINE);
-            }
-            return "\nWELCOME TO OUR LIBRARY!\n\n"
-                + "View our full collection:\n"
-                + Constants.DASHED_LINE
-                + allBookInfo; // stringified automatically
-        }
+        // TODO: Override ToString() to list the full collection of books
+        // Use StringBuilder to loop over books and use their ToString() return value
 
-        public override bool Equals(object? toBeCompared)
-        {
-            // Reference check
-            if (this == toBeCompared)
-            {
-                return true;
-            }
+        // TODO: Override Equals() and GetHashCode() - use Ctrl-. or Cmd-. to generate
+        // Customize to do full checks for reference, null, and class before casting
+        // Perform equality check on basis of title and author
 
-            // Null check
-            if (toBeCompared == null)
-            {
-                return false;
-            }
-
-            // Class check
-            if (GetType() != toBeCompared.GetType())
-            {
-                return false;
-            }
-
-            // Cast
-            Library otherLibrary = (Library)toBeCompared;
-
-            // Compare size of lists first
-            if (Books.Count != otherLibrary.Books.Count)
-            {
-                return false;
-            }
-
-            // Custom comparison of contents
-            foreach (Book book in Books)
-            {
-                int index = otherLibrary.FindBook(book.Title, book.Author);
-                if (index == -1)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        public override int GetHashCode()
-        {
-            throw new NotImplementedException();
-        }
 
         // INSTANCE METHODS
 
@@ -77,17 +26,7 @@ namespace Chapter05
             Books.Add(book);
         }
 
-        public int FindBook(string title, string author)
-        {
-            foreach (Book book in Books)
-            {
-                if (Equals(book.Title, title) && Equals(book.Author, author))
-                {
-                    return Books.IndexOf(book);
-                }
-            }
-            return -1;
-        }
+        // TODO: Add method to look up index of book using title and author
 
         public void PrintAvailableBooks()
         {

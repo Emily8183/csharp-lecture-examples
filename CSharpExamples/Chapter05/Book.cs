@@ -4,14 +4,15 @@ namespace Chapter05
     {
         // FIELDS
 
-        private static int nextIdNum = 1;
+        // TODO: Add a class-level field for tracking next available Id number
 
         // Auto-implemented properties
-        public string BookId { get; set; } // backing field is bookId
+        // TODO: Add a BookId property
         public string Title { get; set; } // title
         public string Author { get; set; } // author
         public int NumPages { get; set; } // numPages
         public bool Available { get; set; } = true; // available
+
 
         // CONSTRUCTORS
 
@@ -20,29 +21,23 @@ namespace Chapter05
             Title = title;
             Author = author;
             NumPages = numPages;
-            BookId = GenerateBookId();
+            // TODO: set BookId using instance method to concatenate string
         }
 
         // Overloaded constructor to allow optional default value for numPages
         public Book(string title, string author)
             : this(title, author, 0) { }
 
+
         // OVERRIDE SPECIAL METHODS
 
-        public override string ToString()
-        {
-            return "\n" + GetTitleAndAuthor() + "\n" + NumPages + " pages \nID " + BookId;
-        }
+        // TODO: Override ToString() to include title, author, number of pages, and book id
+
 
         // INSTANCE METHODS
 
-        private string GenerateBookId()
-        {
-            string id =
-                Utils.GetInitials(Author) + "-" + Title.Substring(0, 3).ToUpper() + "-" + nextIdNum;
-            nextIdNum++;
-            return id;
-        }
+        // TODO: Write a method to generate a book ID with initials, title, and next ID num
+        // Remember to increase next Id num for next book
 
         public string GetTitleAndAuthor()
         {

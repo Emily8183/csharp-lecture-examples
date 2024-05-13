@@ -2,6 +2,6 @@ namespace Chapter05
 {
     public class Constants
     {
-        public const string DASHED_LINE = "------------------------------------------------";
+        // TODO: Create a constant dashed line for use in ToString() methods
     }
 }
