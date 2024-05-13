@@ -1,4 +1,3 @@
-using System.Reflection.PortableExecutable;
 using System.Text;
 
 namespace Chapter03
@@ -74,7 +73,7 @@ namespace Chapter03
             string[] frodoLetters = ["f", "r", "o", "d", "o"];
 
             // Declare new Stringbuilder object
-            StringBuilder frodo = new StringBuilder();
+            StringBuilder frodo = new StringBuilder(); // or just new()
 
             // Loop over and add to it a letter at a time - make it uppercase
             foreach (string letter in frodoLetters)
