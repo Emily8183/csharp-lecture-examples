@@ -5,10 +5,10 @@ namespace Chapter05
         // FIELDS
 
         private static int nextIdNum = 1;
+        public readonly string bookId; // Value set in constructor
 
         // Auto-implemented properties
-        public string BookId { get; set; } // backing field is bookId
-        public string Title { get; set; } // title
+        public string Title { get; set; } // backing field is title
         public string Author { get; set; } // author
         public int NumPages { get; set; } // numPages
         public bool Available { get; set; } = true; // available
@@ -20,7 +20,7 @@ namespace Chapter05
             Title = title;
             Author = author;
             NumPages = numPages;
-            BookId = GenerateBookId();
+            bookId = GenerateBookId();
         }
 
         // Overloaded constructor to allow optional default value for numPages
@@ -31,7 +31,7 @@ namespace Chapter05
 
         public override string ToString()
         {
-            return "\n" + GetTitleAndAuthor() + "\n" + NumPages + " pages \nID " + BookId;
+            return "\n" + GetTitleAndAuthor() + "\n" + NumPages + " pages \nID " + bookId;
         }
 
         // INSTANCE METHODS

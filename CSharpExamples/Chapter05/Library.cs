@@ -4,7 +4,7 @@ namespace Chapter05
 {
     public class Library
     {
-        private List<Book> Books { get; } = [];
+        private readonly List<Book> books = [];
 
         // Note: the default constructor is sufficient to instantiate a library object
 
@@ -13,7 +13,7 @@ namespace Chapter05
         public override string ToString()
         {
             StringBuilder allBookInfo = new();
-            foreach (Book book in Books)
+            foreach (Book book in books)
             {
                 allBookInfo.Append(book.ToString());
                 allBookInfo.Append("\n" + Constants.DASHED_LINE);
@@ -48,13 +48,13 @@ namespace Chapter05
             Library otherLibrary = (Library)toBeCompared;
 
             // Compare size of lists first
-            if (Books.Count != otherLibrary.Books.Count)
+            if (books.Count != otherLibrary.books.Count)
             {
                 return false;
             }
 
             // Custom comparison of contents
-            foreach (Book book in Books)
+            foreach (Book book in books)
             {
                 int index = otherLibrary.FindBook(book.Title, book.Author);
                 if (index == -1)
@@ -74,16 +74,16 @@ namespace Chapter05
 
         public void AddBook(Book book)
         {
-            Books.Add(book);
+            books.Add(book);
         }
 
         public int FindBook(string title, string author)
         {
-            foreach (Book book in Books)
+            foreach (Book book in books)
             {
                 if (Equals(book.Title, title) && Equals(book.Author, author))
                 {
-                    return Books.IndexOf(book);
+                    return books.IndexOf(book);
                 }
             }
             return -1;
@@ -92,7 +92,7 @@ namespace Chapter05
         public void PrintAvailableBooks()
         {
             Console.WriteLine("\nLIST OF BOOKS AVAILABLE:");
-            foreach (Book book in Books)
+            foreach (Book book in books)
             {
                 if (book.Available)
                 {

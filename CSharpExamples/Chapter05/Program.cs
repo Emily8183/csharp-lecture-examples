@@ -4,13 +4,13 @@ using Chapter05;
 
 // Create 3 objects of the Book class and print their id after each
 Book book1 = new Book("Contact", "Carl Sagan", 430);
-Console.WriteLine("\nBook 1 has an ID of " + book1.BookId);
+Console.WriteLine("\n" + book1.GetTitleAndAuthor() + " has an ID of " + book1.bookId);
 
 Book book2 = new Book("Nemesis", "Isaac Asimov", 364);
-Console.WriteLine("Book 2 has an ID of " + book2.BookId);
+Console.WriteLine("\n" + book2.GetTitleAndAuthor() + " has an ID of " + book2.bookId);
 
 Book book3 = new Book("1984", "George Orwell");
-Console.WriteLine("Book 3 has an ID of " + book3.BookId);
+Console.WriteLine("\n" + book3.GetTitleAndAuthor() + " has an ID of " + book3.bookId);
 
 // Test overridden ToString();
 Console.WriteLine(book1);
