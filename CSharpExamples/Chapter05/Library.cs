@@ -4,7 +4,7 @@ namespace Chapter05
 {
     public class Library
     {
-        private List<Book> Books { get; } = [];
+        private List<Book> books = [];
 
         // Note: the default constructor is sufficient to instantiate a library object
 
@@ -23,7 +23,7 @@ namespace Chapter05
 
         public void AddBook(Book book)
         {
-            Books.Add(book);
+            books.Add(book);
         }
 
         // TODO: Add method to look up index of book using title and author
@@ -31,7 +31,7 @@ namespace Chapter05
         public void PrintAvailableBooks()
         {
             Console.WriteLine("\nLIST OF BOOKS AVAILABLE:");
-            foreach (Book book in Books)
+            foreach (Book book in books)
             {
                 if (book.Available)
                 {

@@ -4,10 +4,10 @@ namespace Chapter05
     {
         // FIELDS
 
-        // TODO: Add a class-level field for tracking next available Id number
+        // TODO: Add a class-level field for tracking next available id number
+        // TODO: Add a read-only field for the book id, but do not initialize it
 
         // Auto-implemented properties
-        // TODO: Add a BookId property
         public string Title { get; set; } // title
         public string Author { get; set; } // author
         public int NumPages { get; set; } // numPages
@@ -21,7 +21,7 @@ namespace Chapter05
             Title = title;
             Author = author;
             NumPages = numPages;
-            // TODO: set BookId using instance method to concatenate string
+            // TODO: set book id using instance method to concatenate string
         }
 
         // Overloaded constructor to allow optional default value for numPages
@@ -37,7 +37,7 @@ namespace Chapter05
         // INSTANCE METHODS
 
         // TODO: Write a method to generate a book ID with initials, title, and next ID num
-        // Remember to increase next Id num for next book
+        // Remember to increase next id num for next book
 
         public string GetTitleAndAuthor()
         {
