@@ -115,15 +115,17 @@ Console.WriteLine(string.Join("\n", pizzas));
 /* WRITING METHODS */
 
 // Code a method
-static string GetFullName(string firstName, string lastName)
+static string GetFullName(string first, string last)
 {
-    return firstName + " " + lastName;
+    return first + " " + last;
 }
 
 // Call the method and store the result in a variable, then print it
 // Take note of the data type of the return value
+string yourName = GetFullName(firstName, lastName);
 string johnSmith = GetFullName("John", "Smith");
 
+Console.WriteLine(yourName);
 Console.WriteLine(johnSmith);
 
 /* USING METHODS FROM OTHER CLASSES */
@@ -133,6 +135,7 @@ Console.WriteLine(johnSmith);
 // Call each of the static methods from the Examples class
 // Make sure to explicitly access the namespace at the top of the file
 
+Examples.SayHello(yourName);
 Examples.SayHello(johnSmith);
 
 int sum = Examples.AddThreeNums(162, 58, 94);
