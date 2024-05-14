@@ -89,17 +89,19 @@ namespace Chapter03
 
             // Construct a switch statement to initialize the realm
             //   Legolas is from the Woodland Realm
-            //   Elrond is from Rivendell
-            //   Galadriel is from Lothlórien
+            //   Elrond and Arwen are from Rivendell
+            //   Galadriel and Celeborn are from Lothlórien
             switch (elfName)
             {
                 case "Legolas":
                     realm = "the Woodland Realm";
                     break;
                 case "Elrond":
+                case "Arwen":
                     realm = "Rivendell";
                     break;
                 case "Galadriel":
+                case "Celeborn":
                     realm = "Lothlórien";
                     break;
                 default:
