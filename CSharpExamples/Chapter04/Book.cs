@@ -33,13 +33,13 @@ namespace Chapter04
         public void CheckOut()
         {
             Available = false;
-            Console.WriteLine("\n" + GetTitleAndAuthor() + " has been checked out of the library.");
+            Console.WriteLine(Environment.NewLine + GetTitleAndAuthor() + " has been checked out of the library.");
         }
 
         public void CheckIn()
         {
             Available = true;
-            Console.WriteLine("\n" + GetTitleAndAuthor() + " has been checked in.");
+            Console.WriteLine(Environment.NewLine + GetTitleAndAuthor() + " has been checked in.");
         }
     }
 }

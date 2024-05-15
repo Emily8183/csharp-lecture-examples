@@ -15,12 +15,12 @@ namespace Chapter04
 
         public void PrintAvailableBooks()
         {
-            Console.WriteLine("\nLIST OF BOOKS AVAILABLE:");
+            Console.WriteLine(Environment.NewLine + "LIST OF BOOKS AVAILABLE:");
             foreach (Book book in books)
             {
                 if (book.Available)
                 {
-                    Console.WriteLine("\t" + book.GetTitleAndAuthor());
+                    Console.WriteLine(book.GetTitleAndAuthor());
                 }
             }
         }

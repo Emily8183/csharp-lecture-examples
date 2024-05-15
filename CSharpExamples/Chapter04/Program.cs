@@ -3,7 +3,7 @@
 using Chapter04;
 
 // Create an object of the Library class
-Library library = new Library();
+Library library = new Library(); // or new()
 
 // Create three objects of the Book class
 Book book1 = new Book("Contact", "Carl Sagan", 430);
