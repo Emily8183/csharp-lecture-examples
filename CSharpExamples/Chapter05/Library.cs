@@ -12,14 +12,15 @@ namespace Chapter05
 
         public override string ToString()
         {
+            string nl = Environment.NewLine;
             StringBuilder allBookInfo = new();
             foreach (Book book in books)
             {
                 allBookInfo.Append(book); // implicit call to .ToString()
-                allBookInfo.Append("\n" + Constants.DASHED_LINE);
+                allBookInfo.Append(nl + Constants.DASHED_LINE);
             }
-            return "\nWELCOME TO OUR LIBRARY!\n\n"
-                + "View our full collection:\n"
+            return nl + "WELCOME TO OUR LIBRARY!" + nl + nl
+                + "View our full collection:" + nl
                 + Constants.DASHED_LINE
                 + allBookInfo; // implicit converstion to string
         }
@@ -91,12 +92,12 @@ namespace Chapter05
 
         public void PrintAvailableBooks()
         {
-            Console.WriteLine("\nLIST OF BOOKS AVAILABLE:");
+            Console.WriteLine(Environment.NewLine + "LIST OF BOOKS AVAILABLE:");
             foreach (Book book in books)
             {
                 if (book.Available)
                 {
-                    Console.WriteLine("\t" + book.GetTitleAndAuthor());
+                    Console.WriteLine(book.GetTitleAndAuthor());
                 }
             }
         }

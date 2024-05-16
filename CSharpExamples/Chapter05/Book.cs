@@ -31,7 +31,8 @@ namespace Chapter05
 
         public override string ToString()
         {
-            return "\n" + GetTitleAndAuthor() + "\n" + NumPages + " pages \nID " + bookId;
+            string nl = Environment.NewLine;
+            return nl + GetTitleAndAuthor() + nl + NumPages + " pages" + nl + "ID " + bookId;
         }
 
         // INSTANCE METHODS
@@ -52,13 +53,13 @@ namespace Chapter05
         public void CheckOut()
         {
             Available = false;
-            Console.WriteLine("\n" + GetTitleAndAuthor() + " has been checked out of the library.");
+            Console.WriteLine(Environment.NewLine + GetTitleAndAuthor() + " has been checked out of the library.");
         }
 
         public void CheckIn()
         {
             Available = true;
-            Console.WriteLine("\n" + GetTitleAndAuthor() + " has been checked in.");
+            Console.WriteLine(Environment.NewLine + GetTitleAndAuthor() + " has been checked in.");
         }
     }
 }
