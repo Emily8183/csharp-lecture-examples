@@ -15,13 +15,13 @@ namespace Chapter05
             StringBuilder allBookInfo = new();
             foreach (Book book in books)
             {
-                allBookInfo.Append(book.ToString());
+                allBookInfo.Append(book); // implicit call to .ToString()
                 allBookInfo.Append("\n" + Constants.DASHED_LINE);
             }
             return "\nWELCOME TO OUR LIBRARY!\n\n"
                 + "View our full collection:\n"
                 + Constants.DASHED_LINE
-                + allBookInfo; // stringified automatically
+                + allBookInfo; // implicit converstion to string
         }
 
         public override bool Equals(object? toBeCompared)
