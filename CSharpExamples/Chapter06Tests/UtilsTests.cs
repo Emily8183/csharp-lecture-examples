@@ -9,9 +9,12 @@ namespace Chapter06Tests
         [TestMethod]
         public void GetInitialsHasCorrectOutput()
         {
-            string message = "GetInitials() returns only initials when given a full name";
+            // ARRANGE
             string expected = "GH";
+            // ACT
             string actual = Utils.GetInitials("Grace Hopper");
+            // ASSERT
+            string message = "GetInitials() returns only initials when given a full name";
             Assert.AreEqual(expected, actual, message);
         }
     }

@@ -22,34 +22,39 @@ namespace Chapter06Tests
         [TestMethod]
         public void FirstConstructorSetsTitle()
         {
+            // ACT
+            string actual = book1.Title;
             // ASSERT
             string message = "Book constructor sets title";
-            Assert.AreEqual("Hidden Figures", book1.Title, message);
+            Assert.AreEqual("Hidden Figures", actual, message);
         }
 
         // Test that Book constructor sets title correctly
         [TestMethod]
         public void FirstConstructorSetsAuthor()
         {
+            // ACT
+            string actual = book1.Author;
             // ASSERT
             string message = "Book constructor sets author";
-            Assert.AreEqual("Margot Lee Shetterly", book1.Author, message);
+            Assert.AreEqual("Margot Lee Shetterly", actual, message);
         }
 
         // Test that Book constructor sets numPages correctly
         [TestMethod]
         public void FirstConstructorSetsNumPages()
         {
+            // ACT
+            int actual = book1.NumPages;
             // ASSERT
             string message = "Book constructor sets numPages";
-            Assert.AreEqual(271, book1.NumPages, message);
+            Assert.AreEqual(271, actual, message);
         }
 
         // Test that second Book constructor sets NumPages to default value
         [TestMethod]
         public void SecondConstructorSetsNumPages()
         {
-            // ASSERT
             string message = "Second book constructor sets numPages to a default value";
             Assert.AreEqual(0, book2.NumPages, message);
         }

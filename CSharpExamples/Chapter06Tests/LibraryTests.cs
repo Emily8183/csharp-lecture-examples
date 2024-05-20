@@ -77,6 +77,7 @@ namespace Chapter06Tests
             // ARRANGE (additional data)
             Book book1Dupe = new("Hidden Figures", "Margot Lee Shetterly", 271);
             Book book2Dupe = new("Code Girls", "Liza Mundy");
+            Book book3 = new Book("The Secret Life of Bletchley Park", "Sinclair McKay", 322);
             Library libraryDupe = new();
             // ACT
             library.AddBook(book1);
@@ -87,6 +88,10 @@ namespace Chapter06Tests
             string message = "Custom Equals() method compares libraries on title and author only";
             bool condition = Equals(library, libraryDupe);
             Assert.IsTrue(condition, message);
+            // CHECK NEGATIVE CASE
+            library.AddBook(book3);
+            string message2 = "Custom Equals() method returns false if book lists are not the same";
+            Assert.IsFalse(Equals(library, libraryDupe), message2);
         }
     }
 }
