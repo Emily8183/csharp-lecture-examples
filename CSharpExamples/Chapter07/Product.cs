@@ -2,7 +2,7 @@
 
 public abstract class Product
 {
-    public static int NextId { get; set; } = 1;
+    private static int nextId = 1;
 
     public readonly int id; // initialized in constructor
 
@@ -13,12 +13,12 @@ public abstract class Product
 
     public Product(string name, string desc, double price, int quantity) 
     {
-        id = NextId;
+        id = nextId;
         Name = name;
         Desc = desc;
         Price = price;
         Quantity = quantity;
-        NextId++;
+        nextId++;
     }
 
     public void IncreaseQuantity(int amount) 
