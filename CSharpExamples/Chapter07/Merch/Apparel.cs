@@ -1,6 +1,4 @@
-﻿using System.Xml;
-
-namespace Chapter07;
+﻿namespace Chapter07;
 
 public class Apparel : Merchandise
 {
