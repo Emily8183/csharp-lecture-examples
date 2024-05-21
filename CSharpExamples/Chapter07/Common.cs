@@ -2,10 +2,13 @@
 
 public class Common
 {
-    public const string PIPE = " | ";
-    
-    public static string JoinList(List<string> list)
+    public static string JoinWithComma(List<string> list)
     {
         return string.Join(", ", list);
+    }
+
+    public static string JoinWithPipe(string[] arr)
+    {
+        return string.Join(" | ", arr);
     }
 }
