@@ -25,11 +25,19 @@ public class Product
     public void IncreaseQuantity(int amount) 
     {
         Quantity += amount;
+        Console.WriteLine(
+            amount + " added to inventory for product " + 
+            id + " - " + Name + Environment.NewLine
+            );
     }
 
     public void DecreaseQuantity(int amount) 
     {
         Quantity -= amount;
+        Console.WriteLine(
+            amount + " removed from inventory for product " + 
+            id + " - " + Name + Environment.NewLine
+            );
     }
 
     public override string ToString() 
