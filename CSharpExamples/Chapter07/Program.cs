@@ -22,11 +22,13 @@ Console.WriteLine(tumbler);
 Console.WriteLine(hat);
 Console.WriteLine(tShirt);
 
-// Increase quantity of hats by 5
+// Increase quantity of hat by 5, then print again
 hat.IncreaseQuantity(5);
+Console.WriteLine(hat);
 
-// Decrease quantity of mugs by 1
+// Decrease quantity of mug by 1, then print again
 mug.DecreaseQuantity(1);
+Console.WriteLine(mug);
 
 // Describe each item
 Console.WriteLine(book1.Describe());

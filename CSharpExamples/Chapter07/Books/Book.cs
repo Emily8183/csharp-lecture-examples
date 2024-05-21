@@ -25,7 +25,7 @@ public class Book : Product
         string nl = Environment.NewLine;
         return Name + " by " + Author + nl +
             Desc + nl +
-            Genre + Common.PIPE + Format + Common.PIPE + Price + nl;
+            Common.JoinWithPipe([Genre, Format, Price.ToString()]) + nl;
     }
 }
 

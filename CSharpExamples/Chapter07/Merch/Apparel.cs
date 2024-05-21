@@ -18,8 +18,8 @@ public class Apparel : Merchandise
     {
         string nl = Environment.NewLine;
         return base.ToString() +
-            "Sizes: " + Common.JoinList(sizes) + nl +
-            "Colors: " + Common.JoinList(colors) + nl;
+            "Sizes: " + Common.JoinWithComma(sizes) + nl +
+            "Colors: " + Common.JoinWithComma(colors) + nl;
     }
 
     public override string Describe()
@@ -27,8 +27,8 @@ public class Apparel : Merchandise
         string nl = Environment.NewLine;
         return Name + nl +
             Desc + nl +
-            "Available Sizes: " + Common.JoinList(sizes) + nl +
-            "Available Colors: " + Common.JoinList(colors) + nl +
-            Category + Common.PIPE + Theme + Common.PIPE + Price + nl;
+            "Available Sizes: " + Common.JoinWithComma(sizes) + nl +
+            "Available Colors: " + Common.JoinWithComma(colors) + nl +
+            Common.JoinWithPipe([Category, Theme, Price.ToString()]) + nl;
     }
 }

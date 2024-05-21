@@ -22,6 +22,6 @@ public class UsedBook : Book
         string nl = Environment.NewLine;
         return Name + " by " + Author + nl +
             Desc + nl +
-            Genre + Common.PIPE + Format + Common.PIPE + Condition + Common.PIPE + Price + nl;
+            Common.JoinWithPipe([Genre, Format, Condition, Price.ToString()]) + nl;
     }
 }
