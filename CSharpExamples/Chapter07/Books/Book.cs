@@ -23,10 +23,9 @@ public class Book : Product
 
     public override string Describe() {
         string nl = Environment.NewLine;
-        string pipe = " | ";
         return Name + " by " + Author + nl +
             Desc + nl +
-            Genre + pipe + Format + pipe + Price + nl;
+            Genre + Common.PIPE + Format + Common.PIPE + Price + nl;
     }
 }
 

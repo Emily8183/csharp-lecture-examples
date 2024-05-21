@@ -20,9 +20,8 @@ public class UsedBook : Book
     public override string Describe()
     {
         string nl = Environment.NewLine;
-        string pipe = " | ";
         return Name + " by " + Author + nl +
             Desc + nl +
-            Genre + pipe + Format + pipe + Condition + pipe + Price + nl;
+            Genre + Common.PIPE + Format + Common.PIPE + Condition + Common.PIPE + Price + nl;
     }
 }
