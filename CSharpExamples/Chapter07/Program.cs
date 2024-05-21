@@ -12,15 +12,15 @@ Apparel tShirt = new("Batman T-shirt", "Don the classic Batman logo with this mi
 
 // Note: Collection expressions are new in C# v12 - [1, 2, 3] is short for new int[]{ 1, 2, 3 }
 
-// Print each item
-Console.WriteLine(book1);
-Console.WriteLine(book2);
-Console.WriteLine(usedBook1);
-Console.WriteLine(usedBook2);
-Console.WriteLine(mug);
-Console.WriteLine(tumbler);
-Console.WriteLine(hat);
-Console.WriteLine(tShirt);
+// Add all items to a list typed as List<Product>
+List<Product> items = [book1, book2, usedBook1, usedBook2, mug, tumbler, hat, tShirt];
+
+// Loop through the list and use two logs to print the item itself and then call Describe();
+foreach (Product item in items) 
+{
+    Console.WriteLine(item);
+    Console.WriteLine(item.Describe());
+}
 
 // Increase quantity of hat by 5, then print again
 hat.IncreaseQuantity(5);
@@ -29,13 +29,3 @@ Console.WriteLine(hat);
 // Decrease quantity of mug by 1, then print again
 mug.DecreaseQuantity(1);
 Console.WriteLine(mug);
-
-// Describe each item
-Console.WriteLine(book1.Describe());
-Console.WriteLine(book2.Describe());
-Console.WriteLine(usedBook1.Describe());
-Console.WriteLine(usedBook2.Describe());
-Console.WriteLine(mug.Describe());
-Console.WriteLine(tumbler.Describe());
-Console.WriteLine(hat.Describe());
-Console.WriteLine(tShirt.Describe());
