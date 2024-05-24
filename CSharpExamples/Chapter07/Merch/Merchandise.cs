@@ -43,7 +43,7 @@ public class Merchandise
             "ID: " + id + nl +
             "Item: " + Name + nl +
             "Description: " + Desc + nl +
-            "Price: " + Price + nl +
+            "Price $: " + Price + nl +
             "Quantity: " + Quantity + nl +
             "Category: " + Category + nl +
             "Theme: " + Theme + nl;

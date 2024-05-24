@@ -47,7 +47,7 @@ public class Product
             "ID: " + id + nl +
             "Item: " + Name + nl +
             "Description: " + Desc + nl +
-            "Price: " + Price + nl +
+            "Price $: " + Price + nl +
             "Quantity: " + Quantity + nl;
     }
 
