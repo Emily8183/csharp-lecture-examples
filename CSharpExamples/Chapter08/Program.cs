@@ -51,16 +51,18 @@ Apparel hat =
 
 /* POLYMORPHISM & CASTING WITH CLASS INHERITANCE */
 
-List<Product> items = [book, usedBook, mug, hat]; // Book, UsedBook, Drinkware, Apparel — all Product
+// Book, UsedBook, Drinkware, Apparel — all Product objects
+List<Product> items = [book, usedBook, mug, hat]; 
 
 // Loop through the list and print the condition if a UsedBook is found
 foreach (Product item in items)
 {
     if (item.GetType() == typeof(UsedBook))
     {
-        // It will display the condition
+        // If we print the entire item it will display the condition
         // because it is using the UsedBook implementation of ToString()
         Console.WriteLine(item);
+
         // Must cast the Product item to UsedBook to access Condition property
         Console.WriteLine("Condition: " + ((UsedBook)item).Condition);
     }
@@ -68,32 +70,27 @@ foreach (Product item in items)
 
 /* WORKING WITH INTERFACES */
 
-// Print current state of hat
-Console.WriteLine(hat);
+// Test typing by interface instead of class
+List<IDiscountable> discountables = [hat, usedBook];
 
-// Apply flat discount of $3 to hat and reprint to show change
-hat.ApplyFlatDiscount(3);
-Console.WriteLine(hat);
+foreach (IDiscountable item in discountables)
+{
+    // Print IDiscountable item and see all properties
+    Console.WriteLine(item);
 
-// Apply 50% discount to hat and reprint
-hat.ApplyPercentDiscount(50); // or 0.5
-Console.WriteLine(hat); // 50% of original price, not already discounted
+    // Apply flat discount of $2
+    item.ApplyFlatDiscount(2);
 
-// Remove discount from hat and reprint
-hat.RemoveDiscount();
-Console.WriteLine(hat);
+    // Apply 50% discount
+    item.ApplyPercentDiscount(0.5); // or 50
 
-// Print current state of usedBook
-Console.WriteLine(usedBook);
+    // Cast to Product to access properties
+    Product product = (Product)item;
+    
+    // Check current price as percentage of original price
+    double percentOfOriginal = Math.Round(100 * product.CurrentPrice / product.OriginalPrice);
+    Console.WriteLine("The current price of the " + product.Name + " is " + percentOfOriginal + "% of the original price.");
 
-// Apply flat discount of $2 to usedBook
-usedBook.ApplyFlatDiscount(2);
-Console.WriteLine(usedBook);
-
-// Apply 50% discount to usedBook
-usedBook.ApplyPercentDiscount(0.50); // or 50
-Console.WriteLine(usedBook); // 50% of already discounted price
-
-// Remove discount from usedBook and reprint
-usedBook.RemoveDiscount();
-Console.WriteLine(usedBook);
+    // Remove discount
+    item.RemoveDiscount();
+}
