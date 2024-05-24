@@ -41,9 +41,9 @@ public class UsedBook : Book, IDiscountable
         {
             percent /= 100.0;
         }
+        string text = CurrentPrice == OriginalPrice ? "Discount " : "Additional discount ";
         double newPrice = CurrentPrice * (1 - percent);
         CurrentPrice = Math.Round(newPrice, 2); // round to nearest penny
-        string text = CurrentPrice == OriginalPrice ? "Discount " : "Additional discount ";
         Console.WriteLine(
             text + "of " + (percent * 100) + "% has been applied to " + Name + Environment.NewLine
         );
@@ -52,8 +52,8 @@ public class UsedBook : Book, IDiscountable
     // Apply discount to current price, not original price
     public void ApplyFlatDiscount(double amount)
     {
-        CurrentPrice -= amount;
         string text = CurrentPrice == OriginalPrice ? "Discount " : "Additional discount ";
+        CurrentPrice -= amount;
         Console.WriteLine(
             text + "of $" + amount + " has been applied to " + Name + Environment.NewLine
         );

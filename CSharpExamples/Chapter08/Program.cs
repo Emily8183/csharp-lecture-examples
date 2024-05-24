@@ -48,9 +48,8 @@ foreach (IDiscountable item in discountables)
     // Cast to Product to access properties
     Product product = (Product)item;
     
-    // Check current price as percentage of original price
-    double percentOfOriginal = Math.Round(100 * product.CurrentPrice / product.OriginalPrice);
-    Console.WriteLine("The current price of the " + product.Name + " is " + percentOfOriginal + "% of the original price.");
+    // Check current price
+    Console.WriteLine(product.CurrentPrice);
 
     // Remove discount
     item.RemoveDiscount();
