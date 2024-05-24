@@ -3,49 +3,10 @@
 using Chapter08;
 
 // Several objects of various classes that inherit from Product
-Book book =
-    new(
-        "The Fellowship of the Ring",
-        "The first book of the epic The Lord of the Rings trilogy",
-        18.99,
-        3,
-        "JRR Tolkien",
-        "Fantasy Fiction",
-        "Hardcover"
-    );
-UsedBook usedBook =
-    new(
-        "Fahrenheit 451",
-        "A masterpiece of dystopian storytelling",
-        6.50,
-        1,
-        "Ray Bradbury",
-        "Dystopian Fiction",
-        "Hardcover",
-        "Good"
-    );
-Drinkware mug =
-    new(
-        "Ahsoka Mug",
-        "Have coffee with Ahsoka every day!",
-        13.99,
-        3,
-        "Mugs",
-        "Star Wars",
-        "Ceramic",
-        15
-    );
-Apparel hat =
-    new(
-        "Captain America Hat",
-        "Feel like a supersoldier in this classic hat proudly displaying Captain America's vibranium shield",
-        19.99,
-        5,
-        "Hats",
-        "Marvel",
-        ["OS"],
-        ["navy", "gray"]
-    );
+Book book = new("The Fellowship of the Ring", "The first book of the epic The Lord of the Rings trilogy", 18.99, 3, "JRR Tolkien", "Fantasy Fiction", "Hardcover");
+UsedBook usedBook = new("Fahrenheit 451", "A masterpiece of dystopian storytelling", 6.50, 1, "Ray Bradbury", "Dystopian Fiction", "Hardcover", "Good");
+Drinkware mug = new("Ahsoka Mug", "Have coffee with Ahsoka every day!", 13.99, 3, "Mugs", "Star Wars", "Ceramic", 15);
+Apparel hat = new("Captain America Hat", "Feel like a supersoldier in this classic hat proudly displaying Captain America's vibranium shield", 19.99, 5, "Hats", "Marvel", ["OS"], ["navy", "gray"]);
 
 // Note: Collection expressions are new in C# v12 - [1, 2, 3] is short for new int[]{ 1, 2, 3 }
 
@@ -71,7 +32,7 @@ foreach (Product item in items)
 /* WORKING WITH INTERFACES */
 
 // Test typing by interface instead of class
-List<IDiscountable> discountables = [hat, usedBook];
+List<IDiscountable> discountables = [usedBook, mug, hat];
 
 foreach (IDiscountable item in discountables)
 {
