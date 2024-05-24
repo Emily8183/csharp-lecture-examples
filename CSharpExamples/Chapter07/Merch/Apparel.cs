@@ -27,6 +27,6 @@ public class Apparel : Merchandise
             Desc + nl +
             "Available Sizes: " + Common.JoinWithComma(sizes) + nl +
             "Available Colors: " + Common.JoinWithComma(colors) + nl +
-            Common.JoinWithPipe([Category, Theme, Price.ToString()]) + nl;
+            Common.JoinWithPipe([Category, Theme, "$" + Price.ToString()]) + nl;
     }
 }

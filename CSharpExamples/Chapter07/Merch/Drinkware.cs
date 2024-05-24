@@ -24,6 +24,6 @@ public class Drinkware : Merchandise
         string nl = Environment.NewLine;
         return Ounces + "-oz. " + Material + " " + Name + nl +
             Desc + nl +
-            Common.JoinWithPipe([Category, Theme, Price.ToString()]) + nl;
+            Common.JoinWithPipe([Category, Theme, "$" + Price.ToString()]) + nl;
     }
 }
