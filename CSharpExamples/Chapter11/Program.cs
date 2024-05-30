@@ -65,7 +65,8 @@ foreach (Product product in products)
 
 bool HasInvalidFormat(string data, Regex pattern)
 {
-    return !pattern.IsMatch(data);
+    bool isInvalid = !pattern.IsMatch(data);
+    return isInvalid;
 }
 
 void CheckIdFormats(List<string> idList)
