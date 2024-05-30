@@ -6,8 +6,8 @@ using Chapter11;
 string nl = Environment.NewLine;
 
 // Argument Out of Range Exception
-// Throwing an existing exception on purpose
-// Then handling it so the application doesn't crash
+// Throw an existing exception on purpose
+// Then handle it so the application doesn't crash
 
 void PrintSquareRoot(int n)
 {
@@ -38,8 +38,8 @@ PrintSquareRoot(-5);
 
 
 // InvalidCastException
-// Handling an exception that may or may not ever be an issue
-// Depending on whether someone uses the code correctly
+// Handle an exception that may or may not ever be an issue
+// depending on whether someone uses the code correctly
 
 Apparel hat = new("Hat", 24.99);
 Book book = new("Book", 17.99);
@@ -61,13 +61,12 @@ foreach (Product product in products)
 }
 
 // Custom InvalidPatternException
-// Internal quality control with data validation
+// Provide internal quality control with data validation
 
 bool HasInvalidFormat(string data, Regex pattern)
 {
     return !pattern.IsMatch(data);
 }
-
 
 void CheckIdFormats(List<string> idList)
 {
