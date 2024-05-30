@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using Chapter11;
 
 /**** CHAPTER 11 EXAMPLES ****/
@@ -30,7 +31,7 @@ List<Product> products = [hat, book, usedBook];
 
 foreach (Product product in products)
 {
-    ((IDiscountable)product).Discount(0.30);
+    // ((IDiscountable)product).Discount(0.30);
 }
 
 // Custom InvalidPatternException
@@ -39,7 +40,8 @@ foreach (Product product in products)
 
 bool HasInvalidFormat(string data, Regex pattern)
 {
-    return !pattern.IsMatch(data);
+    bool isInvalid = !pattern.IsMatch(data);
+    return isInvalid;
 }
 
 void CheckIdFormats(List<string> idList)
@@ -57,3 +59,7 @@ void CheckIdFormats(List<string> idList)
 List<string> productIdList = ["A123-C45-YZ", "Q555-L66-AB", "ABCD-EFG-HI", "1234-567-89", "C56-N832-KG"];
 
 CheckIdFormats(productIdList);
+
+// TODO: (Chapter 12) Introduce a logic error in HasInvalid Format
+// Then put a breakpoint where it is called inside CheckIdFormats to debug
+// Watch id and isInvalid to see where values change
