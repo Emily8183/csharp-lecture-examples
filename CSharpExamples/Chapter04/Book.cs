@@ -4,15 +4,16 @@ namespace Chapter04
     {
         // FIELDS
 
-        // Auto-implemented properties
+        // Encapsulation: keep relevant code together
+        // Auto-implemented properties, field is still private but can access through getter and setter
         public string Title { get; set; } // backing field is title
         public string Author { get; set; } // author
         public int NumPages { get; set; } // numPages
-        public bool Available { get; set; } = true; // available
+        public bool Available { get; set; } = true; // available (as the default value)
 
         // CONSTRUCTORS
 
-        public Book(string title, string author, int numPages)
+        public Book(string title, string author, int numPages) //the name of constructor must be the same as the class, no return type
         {
             Title = title;
             Author = author;
