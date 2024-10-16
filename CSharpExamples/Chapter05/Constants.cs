@@ -9,6 +9,7 @@ namespace Chapter05
         //set in SCREAMING_SNAKE_CASE
         //no need to add static, its behind the scenes
         //the value is stored at the class level and can't be changed    
+        //call it this way: string line = Constant.DASHED_LINE;
         
     }
 }
