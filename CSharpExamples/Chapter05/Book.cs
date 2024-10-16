@@ -5,7 +5,7 @@ namespace Chapter05
         // FIELDS
 
         private static int nextIdNum = 1;
-        public readonly string bookId; // Value set in constructor
+        public readonly string bookId; // Value set in constructor, Assigned only once in constructor. same as Java's "final"
 
         // Auto-implemented properties
         public string Title { get; set; } // backing field is title
@@ -20,7 +20,7 @@ namespace Chapter05
             Title = title;
             Author = author;
             NumPages = numPages;
-            bookId = GenerateBookId();
+            bookId = GenerateBookId(); // Assigns a unique ID internally, so we dont need to involve bookId in parameter
         }
 
         // Overloaded constructor to allow optional default value for numPages
