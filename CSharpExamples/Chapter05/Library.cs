@@ -68,9 +68,17 @@ namespace Chapter05
 
         public override int GetHashCode()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(); 
+            //NotImplementedException is a way to signal that the method is not yet implemented. 
+            //When this code runs, it will throw an exception to indicate that GetHashCode() hasn't been provided with any meaningful logic yet.
         }
 
+        // here's another sample, two objects with the same Name and Price will generate the same hash code.
+        // public override int GetHashCode()
+        // {
+        //     return HashCode.Combine(Name, Price);  // Combine important properties for uniqueness
+        // }
+        
         // INSTANCE METHODS
 
         public void AddBook(Book book)
