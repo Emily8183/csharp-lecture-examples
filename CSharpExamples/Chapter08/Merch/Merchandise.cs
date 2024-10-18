@@ -26,6 +26,7 @@ public abstract class Merchandise : Product, IDiscountable //class must be at th
     }
 
     // Apply discount to original price only
+    //interface from IDiscountable, we dont need the keyword override here
     public void ApplyPercentDiscount(double percent)
     {
         // Handle possibility of percent being passed in as a number 1-100
