@@ -1,6 +1,6 @@
 ﻿namespace Chapter08;
 
-public abstract class Merchandise : Product, IDiscountable
+public abstract class Merchandise : Product, IDiscountable //class must be at the front, interfaces are at the end
 {
     public string Category { get; set; }
     public string Theme { get; set; }
